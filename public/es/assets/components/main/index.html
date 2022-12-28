@@ -1,0 +1,412 @@
+<div class="wrapper">
+    <div class="body-overlay"></div>
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <h3><img src="https://thecompanydream.herokuapp.com/assets/utils/src/images/favicon.png"
+                    class="img-fluid" /><span>The Company Dream</span></h3>
+        </div>
+        <ul class="list-unstyled components">
+            <li class="active">
+                <a href="#" class="dashboard"><i class="material-icons">dashboard</i><span>Dashboard</span></a>
+            </li>
+
+            <div class="small-screen navbar-display">
+                <li class="dropdown d-lg-none d-md-block d-xl-none d-sm-block">
+                    <a href="#homeSubmenu0" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="material-icons">notifications</i><span>Inicio</span></a>
+                    <ul class="collapse list-unstyled menu" id="homeSubmenu0">
+                        <li>
+                            <a href="#">You have 5 new messages</a>
+                        </li>
+                        <li>
+                            <a href="#">You're now friend with Mike</a>
+                        </li>
+                        <li>
+                            <a href="#">Wish Mary on her birthday!</a>
+                        </li>
+                        <li>
+                            <a href="#">5 warnings in Server Console</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="d-lg-none d-md-block d-xl-none d-sm-block">
+                    <a href="../home"><i class="material-icons">home</i><span>home</span></a>
+                </li>
+                <li class="d-lg-none d-md-block d-xl-none d-sm-block">
+                    <a href="../main"><i class="material-icons">dashboard</i><span>dashboard</span></a>
+                </li>
+                <li class="d-lg-none d-md-block d-xl-none d-sm-block">
+
+                <li class="d-lg-none d-md-block d-xl-none d-sm-block">
+                    <a href="#"><i class="material-icons">person</i><span>user</span></a>
+                </li>
+                <li class="d-lg-none d-md-block d-xl-none d-sm-block">
+                    <a href="functions/logout.php"><i class="material-icons">logout</i><span>logout</span></a>
+                </li>
+                <li class="d-lg-none d-md-block d-xl-none d-sm-block">
+                    <a href="functions/logout.php"><i
+                            class="material-icons">help_outline</i><span>help_outline</span></a>
+                </li>
+
+                <li class="d-lg-none d-md-block d-xl-none d-sm-block">
+                    <a href="#"><i class="material-icons">settings</i><span>setting</span></a>
+                </li>
+            </div>
+
+
+            <li class="dropdown">
+                <a href="#homeSubmenu1" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <i class="material-icons">aspect_ratio</i><span>Diseño</span></a>
+                <ul class="collapse list-unstyled menu" id="homeSubmenu1">
+                    <li>
+                        <a href="#">Crear</a>
+                    </li>
+                    <li>
+                        <a href="#">Consultar</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="#pageSubmenu6" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <i class="material-icons">grid_on</i><span>Tablas</span></a>
+                <ul class="collapse list-unstyled menu" id="pageSubmenu6">
+                    <li>
+                        <a href="#">Usuarios</a>
+                    </li>
+                    <li>
+                        <a href="#">Nominas</a>
+                    </li>
+                    <li>
+                        <a href="#">Empresa</a>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li class="dropdown">
+                <a href="#pageSubmenu7" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <i class="material-icons">content_copy</i><span>Paginas</span></a>
+                <ul class="collapse list-unstyled menu" id="pageSubmenu7">
+                    <li>
+                        <a href="../calculator/">Calculadora</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="">
+                <a href="#"><i class="material-icons">library_books</i><span>Calenderio</span></a>
+            </li>
+
+
+        </ul>
+
+
+    </nav>
+
+
+
+    <!-- Page Content  -->
+    <div id="content">
+
+        <div class="top-navbar">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="d-xl-block d-lg-block d-md-mone d-none">
+                        <span class="material-icons">arrow_back_ios</span>
+                    </button>
+
+                    <a class="navbar-brand" href="#"> Dashboard </a>
+
+                    <button class="d-inline-block d-lg-none ml-auto more-button" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="material-icons">more_vert</span>
+                    </button>
+
+                    <div class="collapse navbar-collapse d-lg-block d-xl-block d-sm-none d-md-none d-none"
+                        id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../home/">
+                                    <span class="material-icons">home</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../main/">
+                                    <span class="material-icons">dashboard</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" >
+                                    <span onclick="nomina()" class="material-icons">person</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="functions/logout.php">
+                                    <span class="material-icons">logout</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <span class="material-icons">help_outline</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <span class="material-icons">setting</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+
+        <div class="main-content">
+
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="card card-stats">
+                        <div class="card-header">
+                            <div class="icon icon-warning">
+                                <span class="material-icons">equalizer</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p class="category"><strong>Registros</strong></p>
+                            <h3 class="card-title">8</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="stats">
+                                <i class="material-icons text-info">info</i>
+                                <a href="#pablo">Detalles del Reporte</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="card card-stats">
+                        <div class="card-header">
+                            <div class="icon icon-rose">
+                                <span class="material-icons">shopping_cart</span>
+
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p class="category"><strong>Nominas</strong></p>
+                            <h3 class="card-title">7</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="stats">
+                                <i class="material-icons">local_offer</i> Detalles de la Nomina
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="card card-stats">
+                        <div class="card-header">
+                            <div class="icon icon-success">
+                                <span class="material-icons">
+                                    attach_money
+                                </span>
+
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p class="category"><strong>Pago</strong></p>
+                            <h3 class="card-title">$70,100</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="stats">
+                                <i class="material-icons">date_range</i> Última Semana
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="card card-stats">
+                        <div class="card-header">
+                            <div class="icon icon-info">
+
+                                <span class="material-icons">
+                                    follow_the_signs
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p class="category"><strong>Usuarios</strong></p>
+                            <h3 class="card-title">+5</h3>
+                        </div>
+                        <div class="card-footer">
+                            <div class="stats">
+                                <i class="material-icons">update</i>Actualizar
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row ">
+                <div class="col-lg-7 col-md-12">
+                    <div class="card" style="min-height: 485px">
+                        <div class="card-header card-header-text">
+                            <h4 class="card-title">Estadisticas de Empleados</h4>
+                            <p class="category">4/11/2021</p>
+                        </div>
+                        <div class="card-content table-responsive">
+                            <table class="table table-hover">
+                                <thead class="text-primary">
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Correo</th>
+                                        <th>Nombre</th>
+                                        <th>Apellidos</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php
+                                        $records = $conex->prepare('SELECT * FROM usuarios');
+                                        $records->execute();
+                                        while ($results = $records->fetch(PDO::FETCH_ASSOC)) { ?>
+                                    <tr>
+                                        <td>
+                                            <?php echo $results['id']; ?>
+                                        </td>
+                                        <td>
+                                            <?php echo $results['email']; ?>
+                                        </td>
+                                        <td>
+                                            <?php echo $results['name']; ?>
+                                        </td>
+                                        <td>
+                                            <?php echo $results['lastname']; ?>
+                                        </td>
+                                    </tr>
+                                    <?php } ?>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-md-12">
+                    <div class="card" style="min-height: 485px">
+                        <div class="card-header card-header-text">
+                            <h4 class="card-title">Activities</h4>
+                        </div>
+                        <div class="card-content">
+                            <div class="streamline">
+                                <div class="sl-item sl-primary">
+                                    <div class="sl-content">
+                                        <small class="text-muted">5 mins ago</small>
+                                        <p>Se ha unido Sara</p>
+                                    </div>
+                                </div>
+                                <div class="sl-item sl-danger">
+                                    <div class="sl-content">
+                                        <small class="text-muted">25 mins ago</small>
+                                        <p>Se ha unido Stefany</p>
+                                    </div>
+                                </div>
+                                <div class="sl-item sl-success">
+                                    <div class="sl-content">
+                                        <small class="text-muted">40 mins ago</small>
+                                        <p>Se ha unido Miguel</p>
+                                    </div>
+                                </div>
+                                <div class="sl-item">
+                                    <div class="sl-content">
+                                        <small class="text-muted">45 minutes ago</small>
+                                        <p>Se ha unido Sebastian</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <nav class="d-flex">
+                                <ul class="m-0 p-0">
+                                    <li>
+                                        <a href="#">
+                                            Home
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Company
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Portfolio
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Blog
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                        </div>
+                        <div class="col-md-6">
+                            <p class="copyright d-flex justify-content-end"> &copy 2021 Design by
+                                <a href="#">Techno's</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="../assets/components/main/src/js/jquery-3.3.1.slim.min.js"></script>
+<script src="../assets/components/main/src/js/popper.min.js"></script>
+<script src="../assets/components/main/src/js/bootstrap.min.js"></script>
+<script src="../assets/components/main/src/js/jquery-3.3.1.min.js"></script>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').toggleClass('active');
+            $('#content').toggleClass('active');
+        });
+
+        $('.more-button,.body-overlay').on('click', function () {
+            $('#sidebar,.body-overlay').toggleClass('show-nav');
+        });
+
+    });
+</script>

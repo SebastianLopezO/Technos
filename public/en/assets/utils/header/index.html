@@ -1,0 +1,48 @@
+<header>
+    <nav>
+        <div class="logo">The Company Dream</div>
+        <label for="btn" class="icon">
+      <span class="fas fa-bars"></span>
+    </label>
+        <input type="checkbox" id="btn">
+        <ul>
+            <li><a href="../Home">Home</a></li>
+            <li>
+                <label for="btn-1" class="show">About us +</label>
+                <a href="#">About us</a>
+                <input type="checkbox" id="btn-1">
+                <ul>
+                    <li><a href="#">Mission</a></li>
+                    <li><a href="#">Vision</a></li>
+                    <li><a href="#">functions</a></li>
+                </ul>
+            </li>
+            <li>
+                <label for="btn-2" class="show">Services +</label>
+                <a href="#">Services</a>
+                <input type="checkbox" id="btn-2">
+                <ul>
+                    <li><a href="../login">Payroll</a></li>
+                    <li><a href="#">Logins</a></li>
+                    <li>
+                        <label for="btn-3" class="show">Roles +</label>
+                        <a href="#">Roles <span class="fa fa-plus"></span></a>
+                        <input type="checkbox" id="btn-3">
+                        <ul>
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">Employee</a></li>
+                            <li><a href="#">Administrator</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <script>
+        $('.icon').click(function() {
+            $('span').toggleClass("cancel");
+        });
+    </script>
+</header>
